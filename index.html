@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Pac-man</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <!-- Preloader start -->
+    <div id="preloader" class="preloader">
+        <div class="prev">
+            <div class='sk-fading-circle'>
+              <div class='sk-circle sk-circle-1'></div>
+              <div class='sk-circle sk-circle-2'></div>
+              <div class='sk-circle sk-circle-3'></div>
+              <div class='sk-circle sk-circle-4'></div>
+              <div class='sk-circle sk-circle-5'></div>
+              <div class='sk-circle sk-circle-6'></div>
+              <div class='sk-circle sk-circle-7'></div>
+              <div class='sk-circle sk-circle-8'></div>
+              <div class='sk-circle sk-circle-9'></div>
+              <div class='sk-circle sk-circle-10'></div>
+              <div class='sk-circle sk-circle-11'></div>
+              <div class='sk-circle sk-circle-12'></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- === Desktop start === -->
+
+    <div id="desktop">
+
+        <div class="head-wine-first-anim"></div>
+        <div class="main-wine-first-anim"></div>
+        <div class="pac-start"></div>
+        <div class="pac-start_2"></div>
+        <div class="pac-start_3"></div>
+        <div class="pac-start_4"></div>
+        <div class="pac-center"></div>
+        <div class="pac-center_2"></div>
+        <div class="pac-center_3"></div>
+        <div class="pac-center_4"></div>
+        <div id="pac-end" class="pac-end"></div>
+        <div class="pac-end_2"></div>
+        <div class="pac-end_3"></div>
+        <div id="scroll-end" class="scroll-end"></div>
+        <div class="pac-big-bottom"></div>
+
+        <div class="head-wave">
+            <div class="head-wave__first" style="background-image: url(images/header-wave-first.png)"></div>
+            <div class="head-wave__second" style="background-image: url(images/header-wave-second.png)"></div>
+        </div>
+
+        <section class="head">
+            <div class="container">
+                <div class="head__wrapper">
+                    <div class="head__content">
+                        <div class="head__text">
+                            <h2>Создаем интеллектуальные цифровые решения для вашего бизнеса любой сложности</h2>
+                        </div>
+                        <div class="head__button">
+                            <a class="head__link" href="#contacts">ЗАКАЗАТЬ</a>
+                        </div>
+                    </div>
+                    <div class="head__image">
+                        <img src="images/header-pacman.png" alt="pacman">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="head-scroll">
+            <div class="container">
+                <div class="head-scroll__wrapper">
+                    <a class="btn__scroll" href="#scroll-end"><img class="lazy" data-src="images/arrow.png" alt="arrow"
+                            src="#"></a>
+                </div>
+            </div>
+        </div>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__title">
+                    <h3 class="about__title-name">Что мы делаем?</h3>
+                </div>
+                <div class="about__pacman">
+                    <img class="pacman-day lazy" data-src="images/smoll-pacman-day.png" alt="pacman" src="#">
+                </div>
+                <div class="about__pacman-2">
+                    <img class="pacman-day-2 lazy" data-src="images/smoll-pacman-day.png" alt="pacman" src="#">
+                </div>
+                <div class="about__pacman-3">
+                    <img class="pacman-day-3 lazy" data-src="images/smoll-pacman-day.png" alt="pacman" src="#">
+                </div>
+                <div class="about__pacman-4">
+                    <img class="pacman-day-4 lazy" data-src="images/smoll-pacman-day.png" alt="pacman" src="#">
+                </div>
+                <div class="about__wrapper">
+                    <div class="about__block left">
+                        <div class="about__image left">
+                            <img class="lazy" data-src="images/about-1.png" alt="image" src="#">
+                        </div>
+                        <div class="about__content">
+                            <p class="about__text left">
+                                Боты на базе любого
+                                <br>
+                                мессенджера
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__block center">
+                        <div class="about__image center">
+                            <img class="lazy" data-src="images/about-2.png" alt="image" src="#">
+                        </div>
+                        <div class="about__content">
+                            <p class="about__text center">сайты любой сложности</p>
+                        </div>
+                    </div>
+                    <div class="about__block right">
+                        <div class="about__image right">
+                            <img class="lazy" data-src="images/about-3.png" alt="image" src="#">
+                        </div>
+                        <div class="about__content">
+                            <p class="about__text right">
+                                приложения на
+                                <br>
+                                android и ios
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-wave">
+            <div class="main-wave__first" style="background-image: url(images/main-wave-first.png)"></div>
+            <div class="main-wave__second" style="background-image: url(images/main-wave-second.png)"></div>
+        </div>
+
+        <section class="advantages">
+            <div class="advantages__circle"><img class="lazy" data-src="images/section-wave-circle.png" alt="circle"
+                    src="#">
+            </div>
+            <div class="container">
+                <div class="advantages__pacman">
+                    <img class="pacman-night lazy" data-src="images/smoll-pacman-night.png" alt="pacman" src="#">
+                </div>
+                <div class="advantages__pacman-2">
+                    <img class="pacman-night-2 lazy" data-src="images/smoll-pacman-night.png" alt="pacman" src="#">
+                </div>
+                <div class="advantages__pacman-3">
+                    <img class="pacman-night-3 lazy" data-src="images/smoll-pacman-night.png" alt="pacman" src="#">
+                </div>
+                <div class="advantages__pacman-4">
+                    <img class="pacman-night-4 lazy" data-src="images/smoll-pacman-night.png" alt="pacman" src="#">
+                </div>
+                <div class="advantages__title">
+                    <h3 class="advantages__title-name">Почему вы должны
+                        выбрать именно нас</h3>
+                </div>
+                <div class="advantages__content">
+                    <div class="advantages__wrapper top">
+                        <div class="advantages__block top-left">
+                            <div class="advantages__image">
+                                <img class="lazy" data-src="images/advantages-1.png" alt="image" src="#">
+                            </div>
+                            <div class="advantages__info">
+                                <p class="advantages__text">Все этапы разработки можно вы сможете отслеживать на нашем
+                                    сервере</p>
+                            </div>
+                        </div>
+                        <div class="advantages__block top-center">
+                            <div class="advantages__image">
+                                <img class="lazy" data-src="images/advantages-2.png" alt="image" src="#">
+                            </div>
+                            <div class="advantages__info">
+                                <p class="advantages__text">Мы остаемся с вами не только в момент создания, но и
+                                    оказываем
+                                    любую поддержку в процессе эксплуатации
+                                    и вносим любые доработки
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__block top-right">
+                            <div class="advantages__image">
+                                <img class="lazy" data-src="images/advantages-3.png" alt="image" src="#">
+                            </div>
+                            <div class="advantages__info">
+                                <p class="advantages__text">Перед началом разработки изучаем ваших конкурентов и
+                                    углубленно
+                                    изучаем вашу нишу на рынке
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages__wrapper bottom">
+                        <div class="advantages__pacman--evening">
+                            <img class="pacman-evening lazy" data-src="images/smoll-pacman-evening.png" alt="pacman"
+                                src="#">
+                        </div>
+                        <div class="advantages__pacman--evening-2">
+                            <img class="pacman-evening-2 lazy" data-src="images/smoll-pacman-evening.png" alt="pacman"
+                                src="#">
+                        </div>
+                        <div class="advantages__pacman--evening-3">
+                            <img class="pacman-evening-3 lazy" data-src="images/smoll-pacman-evening.png" alt="pacman"
+                                src="#">
+                        </div>
+                        <div class="advantages__block bottom-left">
+                            <div class="advantages__image">
+                                <img class="lazy" data-src="images/advantages-4.png" alt="image" src="#">
+                            </div>
+                            <div class="advantages__info">
+                                <p class="advantages__text">Наша профессиональная команда использует самые передовые
+                                    решения
+                                    и технологии цифрового мира</p>
+                            </div>
+                        </div>
+                        <div class="advantages__block bottom-center">
+                            <div class="advantages__image">
+                                <img class="lazy" data-src="images/advantages-5.png" alt="image" src="#">
+                            </div>
+                            <div class="advantages__info">
+                                <p class="advantages__text" style="text-align: center; padding: 0 15px 0 0;">У нас самые
+                                    разумные цены</p>
+                            </div>
+                        </div>
+                        <div class="advantages__block bottom-right">
+                            <div class="advantages__image">
+                                <img class="lazy" data-src="images/advantages-6.png" alt="image" src="#">
+                            </div>
+                            <div class="advantages__info">
+                                <p class="advantages__text">Наполняем ваш сайт контентом и seo оптимизируем</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact__circles">
+            <div class="contact__circle-right"><img class="lazy" data-src="images/message-smoll-circle.png" alt="circle"
+                    src="#"></div>
+            <div class="contact__circle-left"><img class="lazy" data-src="images/message-big-circle.png" alt="circle"
+                    src="#">
+            </div>
+        </div>
+
+        <section id="contacts" class="contact">
+            <div class="container">
+                <div class="contact__title">
+                    <h5 class="contact__subtitle">
+                        Вы готовы начать работу или получиться консультацию?
+                    </h5>
+                    <h3 class="contact__suptitle">
+                        напишите нам
+                    </h3>
+                </div>
+                <div class="contact__form">
+                    <form action="#">
+                        <input class="contact__input contact__input--name" type="text" placeholder="Имя">
+                        <input class="contact__input contact__input--company" type="text" placeholder="Компания">
+                        <input class="contact__input contact__input--mail" type="text" placeholder="E-mail">
+                        <input class="contact__input contact__input--phone" type="text" placeholder="Телефон">
+                        <textarea class="contact__textarea contact__input--message" placeholder="Сообщение"></textarea>
+                        <button class="contact__button" type="submit">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+                <div class="contact__pacman">
+                    <img class="pacman__big-bottom" src="images/message-pacman.png" alt="pacman">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__line lazy" data-bg="images/footer-line.png"></div>
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__info">
+                        <div class="footer__icon">
+                            <img class="lazy" data-src="images/footer-pacman.png" alt="pacman" src="#">
+                        </div>
+                        <div class="footer__text">
+                            <a href="tel:+375111111111" class="footer__text-phone">+375 11 111 11 11</a>
+                            <a href="mailto:info@mail.ru" class="footer__text-standart">info@mail.ru</a>
+                            <a href="#" class="footer__text-standart">Публичная оферта</a>
+                        </div>
+                    </div>
+                    <div class="footer__socials">
+                        <div class="footer__soc-icon">
+                            <a href="#" class="footer__soc-link"><img class="lazy" data-src="images/vk-icon.png"
+                                    alt="socials" src="#"></a>
+                        </div>
+                        <div class="footer__soc-icon">
+                            <a href="#" class="footer__soc-link"><img class="lazy" data-src="images/tg-icon.png"
+                                    alt="socials" src="#"></a>
+                        </div>
+                        <div class="footer__soc-icon">
+                            <a href="#" class="footer__soc-link"><img class="lazy" data-src="images/yt-icon.png"
+                                    alt="socials" src="#"></a>
+                        </div>
+                    </div>
+                    <div class="footer__subtitle">
+                        <h5 class="footer__subtitle-text">&#169; Pacman.com, 2020</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- === Desktop end === -->
+
+
+
+    <!-- === Mobile start === -->
+
+    <div id="mobile">
+        
+        <div class="pac-start"></div>
+        <div class="pac-start_2"></div>
+        <div class="pac-start_3"></div>
+        <div class="pac-start_4"></div>
+        <div class="pac-start_5"></div>
+        <div class="pac-start_6"></div>
+        <div class="pac-start_7"></div>
+        <div class="pac-start_8"></div>
+        <div class="pac-start_9"></div>
+        <div class="pac-start_10"></div>
+        <div class="pac-start_11"></div>
+        <div class="pac-start_12"></div>
+        <div class="main-wave-first-anim"></div>
+
+        <div class="header-wave">
+            <div class="header-wave__first" style="background-image: url(images/mobile/header-wave-first.png)"></div>
+            <div class="header-wave__second" style="background-image: url(images/mobile/header-wave-second.png)"></div>
+        </div>
+
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__pacman">
+                        <img class="header__pacman-img lazy" src="#" data-src="images/mobile/header-pacman.png" alt="pacman">
+                    </div>
+                    <div class="header__title">
+                        <h2 class="header__title-text">
+                            Создаем интеллектуальные цифровые решения для вашего бизнеса
+                            любой сложности
+                        </h2>
+                    </div>
+                    <div class="header__btn">
+                        <a href="#contact" class="header__link">ЗАКАЗАТЬ</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__title">
+                    <h3 class="about__title-text">
+                        Что мы делаем?
+                    </h3>
+                </div>
+                <div class="about__block">
+                    <div class="about__pacman-1"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-day.png" alt="pacman"></div>
+                    <div class="about__icon">
+                        <img class="about__img lazy" src="#" data-src="images/mobile/about-1.png" alt="image">
+                    </div>
+                    <div class="about__info">
+                        <p class="about__info-text">
+                            Боты на базе любого мессенджера
+                        </p>
+                    </div>
+                </div>
+                <div class="about__block">
+                    <div class="about__pacman about__pacman-2"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-day.png" alt="pacman"></div>
+                    <div class="about__icon">
+                        <img class="about__img lazy" src="#" data-src="images/mobile/about-2.png" alt="image">
+                    </div>
+                    <div class="about__info">
+                        <p class="about__info-text">
+                            сайты любой сложности
+                        </p>
+                    </div>
+                </div>
+                <div class="about__block">
+                    <div class="about__pacman about__pacman-3"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-day.png" alt="pacman"></div>
+                    <div class="about__icon">
+                        <img class="about__img lazy" src="#" data-src="images/mobile/about-3.png" alt="image">
+                    </div>
+                    <div class="about__info">
+                        <p class="about__info-text">
+                            приложения на android и ios
+                        </p>
+                    </div>
+                    <div class="about__pacman-4"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-day.png" alt="pacman"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-wave">
+            <div class="main-wave__first" style="background-image: url(images/mobile/main-wave-first.png)"></div>
+            <div class="main-wave__second" style="background-image: url(images/mobile/main-wave-second.png)"></div>
+        </div>
+
+        <section class="advantages">
+            <div class="advantages__circle">
+                <img class="lazy" src="#" data-src="images/mobile/advantages-circle.png" alt="circle">
+            </div>
+            <div class="container">
+                <div class="advantages__title">
+                    <h3 class="advantages__title-text">
+                        Почему вы должны
+                        выбрать именно нас
+                    </h3>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__pacman advantages__pacman-1"><img class="pacman-icon" src="images/mobile/smoll-pacman-night.png" alt="pacman"></div>
+                    <div class="advantages__icon">
+                        <img class="advantages__img lazy" src="#" data-src="images/mobile/advantages-1.png" alt="image">
+                    </div>
+                    <div class="advantages__info">
+                        <p class="advantages__info-text advantages__info-text--1">
+                            Перед началом разработки изучаем ваших конкурентов и углубленно изучаем вашу нишу на рынке
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__pacman advantages__pacman-2"><img class="pacman-icon" src="images/mobile/smoll-pacman-night.png" alt="pacman"></div>
+                    <div class="advantages__icon">
+                        <img class="advantages__img lazy" src="#" data-src="images/mobile/advantages-2.png" alt="image">
+                    </div>
+                    <div class="advantages__info">
+                        <p class="advantages__info-text advantages__info-text--2">
+                            Мы остаемся с вами не только в момент создания, но и оказываем любую поддержку в процессе
+                            эксплуатации
+                            и вносим любые доработки
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__pacman advantages__pacman-3"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-night.png" alt="pacman"></div>
+                    <div class="advantages__icon">
+                        <img class="advantages__img lazy" src="#" data-src="images/mobile/advantages-3.png" alt="image">
+                    </div>
+                    <div class="advantages__info">
+                        <p class="advantages__info-text advantages__info-text--3">
+                            Все этапы разработки можно вы сможете отслеживать на нашем сервере
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__pacman advantages__pacman-4"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-night.png" alt="pacman"></div>
+                    <div class="advantages__icon">
+                        <img class="advantages__img lazy" src="#" data-src="images/mobile/advantages-4.png" alt="image">
+                    </div>
+                    <div class="advantages__info">
+                        <p class="advantages__info-text advantages__info-text--4">
+                            Наша профессиональная команда использует самые передовые решения и технологии цифрового мира
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__pacman advantages__pacman-5"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-day.png" alt="pacman"></div>
+                    <div class="advantages__icon">
+                        <img class="advantages__img lazy" src="#" data-src="images/mobile/advantages-5.png" alt="image">
+                    </div>
+                    <div class="advantages__info">
+                        <p class="advantages__info-text advantages__info-text--5">
+                            У нас самые разумные цены
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__block">
+                    <div class="advantages__pacman advantages__pacman-6"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-day.png" alt="pacman"></div>
+                    <div class="advantages__icon">
+                        <img class="advantages__img lazy" src="#" data-src="images/mobile/advantages-6.png" alt="image">
+                    </div>
+                    <div class="advantages__info">
+                        <p class="advantages__info-text advantages__info-text--6">
+                            Наполняем ваш сайт контентом и seo оптимизируем
+                        </p>
+                    </div>
+                    <div class="advantages__pacman-7"><img class="pacman-icon lazy" src="#" data-src="images/mobile/smoll-pacman-day.png" alt="pacman"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact__pacman">
+                    <img class="contact__pacman-img" src="images/mobile/contact-pacman.png" alt="pacman">
+                </div>
+                <div id="contact" class="contact__title">
+                    <h5 class="contact__title-info">Вы готовы начать работу или получиться консультацию?</h5>
+                    <h3 class="contact__title-text">напишите нам</h3>
+                </div>
+                <form action="#">
+                    <input class="contact__input" type="text" placeholder="Имя">
+                    <input class="contact__input" type="text" placeholder="Компания">
+                    <input class="contact__input" type="text" placeholder="E-mail">
+                    <input class="contact__input" type="text" placeholder="Телефон">
+                    <textarea class="contact__textarea" placeholder="Сообщение"></textarea>
+                    <button class="contact__btn" type="submit">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="footer__line lazy" data-bg="images/mobile/footer-line.png"></div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__block">
+                        <div class="footer__pacman">
+                            <img class="footer__pacman-img lazy" src="#" data-src="images/mobile/footer-pacman.png" alt="pacman">
+                        </div>
+                        <div class="footer__content">
+                            <div class="footer__menu">
+                                <a class="footer__link" style="color: #FDD21D;" href="tel:+375111111111">+375 11 111 11
+                                    11</a>
+                                <a class="footer__link" href="mailto:info@mail.ru">info@mail.ru</a>
+                                <a class="footer__link" href="#">Публичная оферта</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__block">
+                        <ul class="footer__socials">
+                            <li class="footer__wrap-soc">
+                                <a class="footer__soc-link" href="#"><img class="footer__soc-link-img lazy" width="25" height="25" src="#" data-src="images/vk-icon.png" alt="vk"></a>
+                            </li>
+                            <li class="footer__wrap-soc">
+                                <a class="footer__soc-link" href="#"><img class="footer__soc-link-img lazy" width="25" height="25" src="#" data-src="images/tg-icon.png" alt="telegram"></a>
+                            </li>
+                            <li class="footer__wrap-soc">
+                                <a class="footer__soc-link" href="#"><img class="footer__soc-link-img lazy" width="25" height="25" src="#" data-src="images/yt-icon.png" alt="youtube"></a>
+                            </li>
+                        </ul>
+                        <h4 class="footer__text">&#169; Pacman.com, 2020</h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+    <!-- === Mobile end === -->
+
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/TimelineLite.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/BezierPlugin.min.js"></script>
+
+    <script src="js/lazyload.min.js"></script>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
